@@ -6,6 +6,7 @@ body {
   margin: 0;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 375px;
@@ -45,6 +46,7 @@ p {
 }
 
 .attribution {
+  margin-top: 1rem;
   font-size: 11px;
   text-align: center;
 }
