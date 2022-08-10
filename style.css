@@ -29,8 +29,9 @@ section {
   padding: 0 0.5rem;
 }
 
-h3 {
+h1 {
   color: hsl(218, 44%, 22%);
+  font-size: 1.17rem;
   font-weight: 700;
   margin-top: 0.7rem;
   margin-bottom: 0;
