@@ -17,11 +17,14 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./images/screenshot_mobile.png)
+![](./images/screenshot_mobile_light.png)
+![](./images/screenshot_mobile_dark.png)
 
 Mobile Version
 
-![](./images/screenshot.png)
+![](./images/screenshot_light.png)
+![](./images/screenshot_dark.png)
+
 Desktop Version
 
 ### Links
