@@ -52,6 +52,10 @@ I will love to strengthen my color matching skills and Css flexbox.
 - [Font](https://fonts.google.com/specimen/Outfit) - Make use of font weight 400 and 700.
 - [Hosting](https://pages.github.com/) - An amazing step by step process in creating github pages. Highly recommended!
 
+### Acknowledgement 
+
+- My Appreciate goes to Lucas (https://github.com/correlucas) for his insightful design and also for the theming. 
+
 ## Author
 
 - Contact - +2349060260210
