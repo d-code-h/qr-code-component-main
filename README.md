@@ -23,6 +23,7 @@ Desktop Version
 
 ![](./images/screenshot_mobile_light.png)
 ![](./images/screenshot_mobile_dark.png)
+
 Mobile Version
 
 
