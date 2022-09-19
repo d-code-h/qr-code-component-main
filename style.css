@@ -1,5 +1,6 @@
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-size: 100%;
   font-weight: 400;
   background-color: hsl(212, 45%, 89%);
   height: 100vh;
@@ -11,18 +12,41 @@ body {
   align-items: center;
 }
 
+main,
+#img {
+  border-radius: 1rem;
+}
 main {
-  width: 230px;
+  width: 250px;
   padding: 0.75rem;
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0 0.5rem 0.5rem hsla(0, 0%, 50%, 0.1);
-  border-radius: 1rem;
+}
+
+#img {
+  position: relative;
+  transition: transform 1s ease-in-out;
+  animation: slideIn 1s ease-out;
+  overflow: hidden;
+  background-color: rgb(36, 118, 249);
 }
 
 img {
   width: 100%;
   height: 230px;
-  border-radius: 0.5rem;
+  transition: transform 0.7s;
+}
+
+#img img:last-child {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 44%;
+  left: 43%;
+}
+
+#img:hover img {
+  transform: rotate(90deg) scale(125%);
 }
 
 section {
@@ -38,11 +62,29 @@ h1 {
   padding: 0 0 0.3rem 0;
 }
 
+.dark-mode h1 {
+  color: rgb(255, 249, 255);
+}
+
+h1:hover {
+  color: rgb(36, 118, 249);
+}
 p {
   margin-top: 0.5rem;
   font-size: 15px;
   color: hsl(220, 15%, 55%);
   line-height: 1;
+}
+#mode {
+  margin-top: 0.8rem;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  height: 2rem;
+}
+
+#mode:hover {
+  opacity: 0.7;
+  transform: scale(1.03);
 }
 
 .attribution {
@@ -52,4 +94,34 @@ p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Dark mode */
+.dark-mode {
+  background: linear-gradient(
+    180deg,
+    hsla(233, 32%, 10%, 1) 0,
+    hsla(259, 60%, 15%, 1) 100%
+  );
+}
+
+.dark-mode main {
+  background-color: rgb(61, 51, 85);
+}
+
+.dark-mode p,
+.dark-mode footer,
+.dark-mode footer a {
+  color: rgb(228, 216, 232);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
